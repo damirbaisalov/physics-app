@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo_app"
+    tools:context=".quiz_test.QuizTestActivity">
+
+    <LinearLayout
+        android:id="@+id/activity_quiz_test_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/bg_button_disabled"
+        android:layout_margin="30dp"
+        android:padding="30dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/activity_quiz_test_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Физикада зерттелетін табиғат құбылыстарының атауы."
+            android:textColor="@color/white"
+            android:gravity="center"
+            />
+
+        <ProgressBar
+            android:id="@+id/activity_quiz_test_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:progressTint="@color/gradient_end_color"
+            android:progressBackgroundTint="@color/white"
+            android:progress="1"
+            android:max="15"
+            />
+
+        <TextView
+            android:id="@+id/activity_quiz_test_status_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1/15"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            />
+
+        <ProgressBar
+            android:id="@+id/progress_bar_handler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_marginHorizontal="70dp"
+            android:progressTint="@color/primary_app"
+            android:progressBackgroundTint="@color/white"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingHorizontal="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_quiz_test_linear_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_weight="1">
+
+
+        <Button
+            android:id="@+id/activity_verbs_quiz_option_1_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_button_enabled"
+            android:layout_marginVertical="5dp"
+            android:text="test"
+            android:elevation="2dp"
+            />
+
+        <Button
+            android:id="@+id/activity_verbs_quiz_option_2_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_button_enabled"
+            android:layout_marginVertical="5dp"
+            android:text="test"
+            android:elevation="2dp"
+            />
+
+        <Button
+            android:id="@+id/activity_verbs_quiz_option_3_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_button_enabled"
+            android:layout_marginVertical="5dp"
+            android:text="test"
+            android:elevation="2dp"
+            />
+
+        <Button
+            android:id="@+id/activity_verbs_quiz_option_4_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_button_enabled"
+            android:layout_marginVertical="5dp"
+            android:text="test"
+            android:elevation="2dp"
+            />
+
+        <Button
+            android:id="@+id/activity_verbs_quiz_option_5_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_button_enabled"
+            android:layout_marginVertical="5dp"
+            android:text="test"
+            android:elevation="2dp"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
