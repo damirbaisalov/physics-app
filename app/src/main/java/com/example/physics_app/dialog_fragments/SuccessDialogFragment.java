@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 
 import com.example.physics_app.R;
 
+//Диалоговое окно которое открывается по завершению теста в случае если успешно закрыл тест
 public class SuccessDialogFragment extends DialogFragment implements OnClickListener {
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button nextButton = findViewById(R.id.activity_main_button);
 
+        //Кнопка - переход на следующее окно приложение
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

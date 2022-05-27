@@ -19,6 +19,7 @@ import com.example.physics_app.dialog_fragments.FailureDialogFragment;
 import com.example.physics_app.dialog_fragments.SuccessDialogFragment;
 import com.example.physics_app.models.FirstDatabase;
 import com.example.physics_app.models.Question;
+import com.example.physics_app.models.SecondDatabase;
 import com.example.physics_app.quiz_options.QuizOptionsActivity;
 
 import java.util.ArrayList;
@@ -52,7 +53,7 @@ public class QuizTestActivity extends AppCompatActivity {
 
         generateButtons(questionList.get(currentPosition));
 
-
+        //Логика нажатия на кнопку 1
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -60,6 +61,7 @@ public class QuizTestActivity extends AppCompatActivity {
             }
         });
 
+        //Логика нажатия на кнопку 2
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -67,6 +69,7 @@ public class QuizTestActivity extends AppCompatActivity {
             }
         });
 
+        //Логика нажатия на кнопку 3
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -74,6 +77,7 @@ public class QuizTestActivity extends AppCompatActivity {
             }
         });
 
+        //Логика нажатия на кнопку 4
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -81,6 +85,7 @@ public class QuizTestActivity extends AppCompatActivity {
             }
         });
 
+        //Логика нажатия на кнопку 5
         button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -90,6 +95,7 @@ public class QuizTestActivity extends AppCompatActivity {
 
     }
 
+    //Инициализируем все компоненты в экране с вопросами
     private void init() {
 
         intId = getIntent().getIntExtra("ID", 1);
@@ -97,7 +103,7 @@ public class QuizTestActivity extends AppCompatActivity {
         if (intId==1) {
             questionList = FirstDatabase.questions;
         } else {
-            questionList = FirstDatabase.questions;
+            questionList = SecondDatabase.questions;
         }
 
         titleText = findViewById(R.id.activity_quiz_test_title);
@@ -115,6 +121,7 @@ public class QuizTestActivity extends AppCompatActivity {
 
     }
 
+    //Функция для проверки выбранного варианта ответа на правильность
     private void checkOption(Button button, Question question) {
 
         progressBarHandler.setVisibility(View.VISIBLE);
@@ -156,6 +163,7 @@ public class QuizTestActivity extends AppCompatActivity {
 
     }
 
+    //Функция для перехода на следующий вопрос
     private void nextQuestion(Button button) {
         currentPosition++;
         if (currentPosition>=questionList.size()) {
@@ -205,6 +213,7 @@ public class QuizTestActivity extends AppCompatActivity {
         }
     }
 
+    //Функция которая расскидывает варината ответа по кнопкам
     private void generateButtons(Question q) {
 
         ArrayList<Button> buttonList = new ArrayList<>();

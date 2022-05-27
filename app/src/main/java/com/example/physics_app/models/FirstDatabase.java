@@ -3,6 +3,7 @@ package com.example.physics_app.models;
 import java.util.ArrayList;
 import java.util.List;
 
+//Локальная база данных для вопросов с вариантами ответов для первого варианта
 public class FirstDatabase {
 
     public static List<Question> questions = new ArrayList<>();

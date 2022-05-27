@@ -1,5 +1,6 @@
 package com.example.physics_app.models;
 
+//Моделька для вопросов
 public class Question {
     private final String id;
     private final String option1;

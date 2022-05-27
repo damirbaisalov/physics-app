@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.example.physics_app.R;
 
+//Диалоговое окно которое открывается по завершению теста в случае если есть ошибки
 public class FailureDialogFragment extends DialogFragment implements View.OnClickListener {
 
 

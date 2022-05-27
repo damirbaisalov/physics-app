@@ -19,6 +19,7 @@ public class QuizOptionsActivity extends AppCompatActivity {
 
         Button firstButton = findViewById(R.id.activity_quiz_options_first_button);
 
+        //Кнопка - переход на тестник для первого варианта
         firstButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -30,6 +31,7 @@ public class QuizOptionsActivity extends AppCompatActivity {
 
         Button secondButton = findViewById(R.id.activity_quiz_options_second_button);
 
+        //Кнопка - переход на тестник для второго варианта
         secondButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
